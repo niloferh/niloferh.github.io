@@ -1,9 +1,18 @@
 # Personal Portfolio ⚡️ 
 
 > Name: Nilofer Hyder
+
 > https://niloferh.github.io
 
 > This repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.io
+
+## Activity 1
+<p align="center"> 
+  <kbd>
+    <img src="assets/img/Activity_1_Repo_Screenshot.png">
+  </a>
+  </kbd>
+</p>
 
 ## Features 📋
 ⚡️ Fully Responsive\
