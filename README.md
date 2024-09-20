@@ -9,7 +9,7 @@
 ## Activity 1
 <p align="center"> 
   <kbd>
-    <img src="assets/img/Activity_1_Repo_Screenshot.png">
+    <img src="assets/screenshots/Activity_1_Repo_Screenshot.png">
   </a>
   </kbd>
 </p>
