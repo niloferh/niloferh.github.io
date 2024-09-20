@@ -189,6 +189,95 @@
 
   <!-- Main Content-->
   <main>
+
+    <script>
+      const projects_Array = [];
+      const project_dates_Array = [];
+
+      projects_Array.push({img_alt:'blood cell classification',img_src:'/assets/img/APS360_Project.png',title:'BLOOD CELL CLASSIFICATION',caption:'A machine learning solution for the image classification of blood cells.',bullets:'<li><b>Tools:</b> Python, PyTorch, Numpy</li>' +'<li>Developed and trained a primary model consisting of a CNN-RNN combination.</li> ' + '<li>Model classifies microscopic blood cell images from 8 classes.</li>' +'<li>Reached 92.5% test accuracy of model.</li>',online_link:'https://www.youtube.com/watch?v=p76Pt2VIfjg',repo_link:'https://github.com/KashishMistry/bloodcellclassification'}); 
+      project_dates_Array.push(new Date(2023,4))
+      projects_Array.push({img_alt:'mapper',img_src:'/assets/img/297_mapper.png',title:'DeliverIt',caption:'Mapping tool for delivery service providers to optimize delivery routes.',bullets:'<li><b>Tools:</b> C++</li>' + '<li>Implemented Dijikstra and A* algorithms for optimal path finding feature.</li>' + '<li>Designed UI for the map and made it interactive.</li> ',online_link:'',repo_link:''}); 
+      project_dates_Array.push(new Date(2022,4))
+      projects_Array.push({img_alt:'umark',img_src:'/assets/img/umark_logo.png',title:'UMark',caption:'A student tool to manage marks.',bullets:'<li><b>Tools:</b> Javascript, CSS, HTML</li>' + '<li>Add courses and marks for each assignment in a course.</li>' + '<li>Calculate final mark given current marks.</li>' +'<li>Calculate required mark given an expected final mark.</li> ',online_link:'https://replit.com/@zoya5636/NewHacks2021#index.html',repo_link:'https://github.com/zoya5636/NewHacks2021'}); 
+      project_dates_Array.push(new Date(2021,11))
+
+      function generateProjectHTML(project_info) {
+        var html_string = '<div class="col s12 m6 l4">' +
+        '<div class="card medium">' +
+          '<div class="card-image waves-effect waves-block waves-light">' +
+            '<img alt="'+project_info.img_alt+'" src="'+project_info.img_src+'" style="height: 100%; width: 100%" class="activator" />' +
+          '</div>' +
+          '<div class="card-content">' +
+            `<span class="card-title activator purple-text hoverline">`+project_info.title+`<i
+                class="mdi-navigation-more-vert right"></i></span>` +
+            '<p>' +
+              project_info.caption+
+            '</p>' +
+          '</div>' +
+          '<div class="card-reveal">' +
+            `<span class="card-title grey-text"><small>Accomplishments</small><i
+                class="mdi-navigation-close right"></i></span>` +
+            '<ul>' +
+              project_info.bullets +
+            '</ul>';
+        
+        if (project_info.online_link != '') {
+          html_string += '<div class="card-action">' +
+              `<a aria-label="Visit " href="`+project_info.online_link+`" target="_blank" data-position="top"
+                data-tooltip="View Online"` +
+                `class="btn-floating btn-large waves-effect waves-light purple tooltipped"><i
+                  class="fa fa-external-link"></i></a>`;
+          if (project_info.repo_link != '') {
+            html_string += `<a aria-label="Visit the GitHub repo for  project" href="`+project_info.repo_link+`" +
+                target="_blank" data-position="top" data-tooltip="View Source"
+                class="btn-floating btn-large waves-effect waves-light purple tooltipped"><i
+                  class="fa fa-github"></i></a>`;
+          }
+          html_string += '</div>';
+        }
+        html_string += '</div>' +
+        '</div>' +
+      '</div>';
+
+        return html_string;
+      }
+
+      /* projects_Array[0].push('<div class="col s12 m6 l4">' +
+        '<div class="card medium">' +
+          '<div class="card-image waves-effect waves-block waves-light">' +
+            '<img alt="blood cell classification" src="/assets/img/APS360_Project.png" style="height: 100%; width: 100%" class="activator" />' +
+          '</div>' +
+          '<div class="card-content">' +
+            '<span class="card-title activator purple-text hoverline">BLOOD CELL CLASSIFICATION<i' +
+                'class="mdi-navigation-more-vert right"></i></span>' +
+            '<p>' +
+              'A machine learning solution for the image classification of blood cells.' +
+            '</p>' +
+          '</div>' +
+          '<div class="card-reveal">' +
+            '<span class="card-title grey-text"><small>Accomplishments</small><i' +
+                'class="mdi-navigation-close right"></i></span>' +
+            '<ul>' +
+              '<li><b>Tools:</b> Python, PyTorch, Numpy</li>' +
+              '<li>Developed and trained a primary model consisting of a CNN-RNN combination.</li>' +
+              '<li>Model classifies microscopic blood cell images from 8 classes.</li>' +
+              '<li>Reached 92.5% test accuracy of model.</li>' +
+            '</ul>' +
+            '<div class="card-action">' +
+              '<a aria-label="Visit " href="https://www.youtube.com/watch?v=p76Pt2VIfjg" target="_blank" data-position="top"' +
+                'data-tooltip="View Online"' +
+                'class="btn-floating btn-large waves-effect waves-light purple tooltipped"><i' +
+                  'class="fa fa-external-link"></i></a>' +
+              '<a aria-label="Visit the GitHub repo for  project" href="https://github.com/KashishMistry/bloodcellclassification"' +
+                'target="_blank" data-position="top" data-tooltip="View Source"' +
+                'class="btn-floating btn-large waves-effect waves-light purple tooltipped"><i' +
+                  'class="fa fa-github"></i></a>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>');  */
+    </script>
+
     <!-- First Section: Heading lines and image -->
     <section id="intro" class="section scrollspy full-height">
       <div class="overlay"></div>
@@ -400,116 +489,46 @@
     </section>
 
     <!-- Fourth Section: Projects -->
+    
+
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text purple">Projects</h3>
       <div class="container">
-        <div class="row">
 
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="blood cell classification" src="/assets/img/APS360_Project.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator purple-text hoverline">BLOOD CELL CLASSIFICATION<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A machine learning solution for the image classification of blood cells.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Python, PyTorch, Numpy</li>
-                  <li>Developed and trained a primary model consisting of a CNN-RNN combination.</li>
-                  <li>Model classifies microscopic blood cell images from 8 classes.</li>
-                  <li>Reached 92.5% test accuracy of model.</li>
+        <div class="caption">
+          <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#531174"></span></h5>
+          <h5>Recent Projects</h5>
+        </div>
 
+        <div class="row" id="recent_projects">
 
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://www.youtube.com/watch?v=p76Pt2VIfjg" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light purple tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/KashishMistry/bloodcellclassification"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light purple tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <script>
+            latest_proj_index = 0;
+            latest_date = project_dates_Array[0];
+            for (let i = 1; i < projects_Array.length; i++) {
+              if (project_dates_Array[i] > latest_date) {
+                latest_proj_index = i;
+              }
+            }
+            document.getElementById('recent_projects').innerHTML += generateProjectHTML(projects_Array[latest_proj_index]);
 
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="/assets/img/umark_logo.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator purple-text hoverline">UMark<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Student tool to manage marks.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Javascript, CSS, HTML</li>
-                  <li>Add courses and marks for each assignment in a course.</li>
-                  <li>Calculate final mark given current marks.</li>
-                  <li>Calculate required mark given an expected final mark.</li>
+            
+            const Btn = document.createElement('button');
+            Btn.textContent = 'Load More';
+            Btn.style.background='#7c0aa9';
+            Btn.style.color='#ffffff';
+            document.getElementById('projects').appendChild(Btn);
 
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://replit.com/@zoya5636/NewHacks2021#index.html" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light purple tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/zoya5636/NewHacks2021"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light purple tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+            Btn.addEventListener('click', () => {
+              document.getElementById('projects').removeChild(Btn);
+              for (let i = 1; i < projects_Array.length; i++) {
+                if (i != latest_proj_index) {
+                  document.getElementById('recent_projects').innerHTML += generateProjectHTML(projects_Array[i]);
+                }
+              }
+            });
 
-          <!-- Flask Project -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="mapper" src="/assets/img/297_mapper.png"
-                style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator purple-text hoverline">DeliverIt<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Mapping tool for delivery service providers to optimize delivery routes.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title purple-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> C++</li>
-                  <li>Implemented Dijikstra and A* algorithms for optimal path finding feature.</li>
-                  <li>Designed UI for the map and made it interactive.</li>
-
-                </ul>
-              </div>
-            </div>
-          </div>
+          </script>
 
           <!-- ************* -->
         </div>
