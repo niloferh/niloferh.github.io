@@ -28,6 +28,20 @@
   </kbd>
 </p>
 
+## Activity 3
+<p align="center"> 
+  <kbd>
+    <img src="assets/screenshots/Activity_3_Repo_Screenshot.png">
+  </a>
+  </kbd>
+</p>
+<p align="center"> 
+  <kbd>
+    <img src="assets/screenshots/Activity_3_Website_Screenshot.png">
+  </a>
+  </kbd>
+</p>
+
 ## Features 📋
 ⚡️ Fully Responsive\
 ⚡️ Valid HTML5 & CSS3\
