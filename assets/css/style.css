@@ -11,7 +11,7 @@
   /* background-size: cover;  */
   margin: -31px; 
   margin-left:-7px;
-  border: 6px solid rgba(0, 77, 64, 0.4); 
+  border: 6px solid rgba(141, 4, 210, 0.4); 
   border-radius: 50% !important;
 }
 
@@ -85,7 +85,7 @@
   position: relative;
   padding: 11px 35px;
   background: #fff;
-  color: #00796b;
+  color: #7711a2;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -116,7 +116,7 @@
 }
 
 .contactme:hover{
-  color: #00796b;
+  color: #7c0aa9;
   background-color: white;
 }
 /* main body */
@@ -140,7 +140,7 @@ body {
 } */
 
 a {
-  color: #004d40;
+  color: #7c0aa9;
 }
 
 /* main blockqoute */
@@ -237,7 +237,7 @@ ul.side-nav li {
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: rgb(16, 202, 56);
+  color: rgb(133, 47, 139);
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
@@ -320,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: #daa7ff repeat;
   position: relative;
 }
 
@@ -348,10 +348,10 @@ h3 {
 }
 
 #intro.section .underline {
-  border-bottom: 5px solid #24305e;
+  border-bottom: 5px solid #430a51;
 }
 
-#intro.section .teal {
+#intro.section .purple {
   padding: 0 10px;
 }
 
@@ -367,7 +367,7 @@ h3 {
 .waves-effect.waves-blue .waves-ripple {
   /* The alpha value allows the text and background color
    of the button to still show through. */
-  background-color: rgba(33, 150, 243, 0.2);
+  background-color: rgba(187, 141, 222, 0.907);
 }
 
 .card {
@@ -473,7 +473,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid #004d40 !important;
+  border-bottom: 3px solid #7c0aa9 !important;
 }
 
 #skills .card.large {
@@ -552,6 +552,10 @@ small {
   color: #008073 !important;
 }
 
+.purple-text {
+  color: #78278f !important;
+}
+
 /* .teal-text {
   color: #0b5e86 !important;
 } */
@@ -560,6 +564,10 @@ small {
 
 .teal {
   background-color: #008073 !important;
+}
+
+.purple {
+  background-color: #78278f !important;
 }
 
 /* .teal {
@@ -602,7 +610,7 @@ small {
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: #009688;
+    color: #7c0aa9;
     height: 56px;
     line-height: 56px;
   }
