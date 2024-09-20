@@ -42,6 +42,20 @@
   </kbd>
 </p>
 
+## Activity 4
+<p align="center"> 
+  <kbd>
+    <img src="assets/screenshots/Activity_4_Repo_Screenshot.png">
+  </a>
+  </kbd>
+</p>
+<p align="center"> 
+  <kbd>
+    <img src="assets/screenshots/Activity_4_Website_Screenshot.png">
+  </a>
+  </kbd>
+</p>
+
 ## Features 📋
 ⚡️ Fully Responsive\
 ⚡️ Valid HTML5 & CSS3\
